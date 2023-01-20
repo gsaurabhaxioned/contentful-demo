@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  </head>
+  <body>
+    <ul>
+      {% for page in contentful-page %}
+        <li><a href="/{{ page.slug | url }}">{{page.title}}</a></li>
+      {% endfor %}
+    </ul>
+    {{content}}
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "contentful-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "file-size": "^1.0.0"
+  },
+  "devDependencies": {
+    "@contentful/rich-text-html-renderer": "^16.0.2",
+    "contentful": "^9.2.17",
+    "dotenv": "^16.0.3"
+  }
+}

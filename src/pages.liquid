@@ -1,0 +1,21 @@
+---
+pagination:
+  data: contentful-page
+  size: 1
+  alias: page
+  addAllPagesToCollections: true
+permalink: "{{ page.slug | slug }}/"
+tags: "page"
+layout: layout.liquid
+
+renderData:
+  title: "{{ page.title }}"
+
+---
+<h1>{{ page.productName }}</h1>
+<h2>{{ page.title }}</h2>
+<p>
+  {{ page.description.content[0].content[0].value }}
+</p>
+<img src="{{ page.image.fields.file.url }}">
+<h4>price: {{ page.price }} rs</h4>
